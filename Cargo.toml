@@ -1,0 +1,11 @@
+[package]
+name = "advent-of-code-2020"
+version = "0.1.0"
+authors = ["Benjamin Jones <benjaminfjones@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "d1"
+path = "src/d1/bin/main.rs"
+
+[dependencies]
