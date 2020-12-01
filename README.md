@@ -1,4 +1,7 @@
 # advent-of-code-2020
+
+![Rust](https://github.com/benjaminfjones/advent-of-code-2020/workflows/Rust/badge.svg)
+
 Advent of Code 2020 - Rust edition
 
 To run tests of all days:
