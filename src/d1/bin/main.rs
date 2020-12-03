@@ -34,13 +34,14 @@
 /// 
 /// Your puzzle answer was 127642310.
 
+extern crate aoc_2020;
+
 use std::collections::BTreeSet;
-use std::fs::File;
-use std::io::{self, BufRead};
+use aoc_2020::util;
 
 pub fn main() {
     let mut nums = BTreeSet::new();
-    let lines = read_lines("inputs/d1")
+    let lines = util::read_lines("inputs/d1")
         .expect("failed to open file inputs/d1");
     for line in lines {
         if let Ok(act) = line {
@@ -95,11 +96,6 @@ fn find_sum_triple(nums: &BTreeSet<i64>, sum: i64) -> Option<(i64, i64, i64)> {
         }
     }
     None
-}
-
-fn read_lines(path: &str) -> io::Result<io::Lines<io::BufReader<File>>> {
-    let in_file = File::open(path)?;
-    Ok(io::BufReader::new(in_file).lines())
 }
 
 #[cfg(test)]
