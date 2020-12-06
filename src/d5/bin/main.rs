@@ -1,10 +1,11 @@
 extern crate aoc_2020;
 
 use aoc_2020::util;
+use std::collections::HashSet;
 
 pub fn main() {
     let mut max = 0;
-    let mut seen_seats: Vec<usize> = Vec::new();
+    let mut seen_seats: HashSet<usize> = HashSet::new();
     for line in util::read_lines("inputs/d5").unwrap() {
         let line = line.unwrap();
         let idx = line.find(|c| c == 'R' || c == 'L').unwrap();
@@ -16,11 +17,9 @@ pub fn main() {
         if seat_id > max {
             max = seat_id;
         }
-        seen_seats.push(seat_id);
+        seen_seats.insert(seat_id);
     }
     println!("MAX {}", max);
-    seen_seats.sort();
-    // println!("seen seats: {:?}", seen_seats);
     for s in seen_seats.iter() {
         if !seen_seats.contains(&(s-1)) || !seen_seats.contains(&(s+1)) {
             println!("suspect seat {}", s);
