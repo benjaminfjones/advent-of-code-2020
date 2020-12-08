@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Benjamin Jones <benjaminfjones@gmail.com>"]
 edition = "2018"
 
+[dependencies]
+regex = "1"
+
 [[bin]]
 name = "d1"
 path = "src/d1/bin/main.rs"
@@ -28,4 +31,6 @@ path = "src/d5/bin/main.rs"
 name = "d6"
 path = "src/d6/bin/main.rs"
 
-[dependencies]
+[[bin]]
+name = "d7"
+path = "src/d7/bin/main.rs"
