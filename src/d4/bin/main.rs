@@ -1,7 +1,9 @@
 /// --- Part Two ---
-/// The line is moving more quickly now, but you overhear airport security talking about how passports with invalid data are getting through. Better add some data validation, quick!
+/// The line is moving more quickly now, but you overhear airport security talking about how
+/// passports with invalid data are getting through. Better add some data validation, quick!
 ///
-/// You can continue to ignore the cid field, but each other field has strict rules about what values are valid for automatic validation:
+/// You can continue to ignore the cid field, but each other field has strict rules about what
+/// values are valid for automatic validation:
 ///
 /// byr (Birth Year) - four digits; at least 1920 and at most 2002.
 /// iyr (Issue Year) - four digits; at least 2010 and at most 2020.
@@ -13,7 +15,8 @@
 /// ecl (Eye Color) - exactly one of: amb blu brn gry grn hzl oth.
 /// pid (Passport ID) - a nine-digit number, including leading zeroes.
 /// cid (Country ID) - ignored, missing or not.
-/// Your job is to count the passports where all required fields are both present and valid according to the above rules. Here are some example values:
+/// Your job is to count the passports where all required fields are both present and valid
+/// according to the above rules. Here are some example values:
 ///
 /// byr valid:   2002
 /// byr invalid: 2003

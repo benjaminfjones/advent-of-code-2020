@@ -34,3 +34,7 @@ path = "src/d6/bin/main.rs"
 [[bin]]
 name = "d7"
 path = "src/d7/bin/main.rs"
+
+[[bin]]
+name = "d8"
+path = "src/d8/bin/main.rs"
